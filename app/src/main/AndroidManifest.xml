@@ -13,30 +13,26 @@
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
     <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
 
-    <meta-data
-        android:name="TUYA_SMART_APPKEY"
-        android:value="mnc57s5mwpuxswxf39ya" />
-    <meta-data
-        android:name="TUYA_SMART_SECRET"
-        android:value="gt4jd95n7kv3npeyndqdfufnygheuemh" />
-
-
     <application
+        android:name=".TuyaSmartApp"
         android:allowBackup="false"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="false"
         android:theme="@style/Theme.IPCTest">
+        <meta-data
+            android:name="TUYA_SMART_APPKEY"
+            android:value="mnc57s5mwpuxswxf39ya" />
+        <meta-data
+            android:name="TUYA_SMART_SECRET"
+            android:value="gt4jd95n7kv3npeyndqdfufnygheuemh" />
         <activity android:name=".ActivityIPCMain">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-        <activity android:name=".MainActivity">
-
         </activity>
     </application>
 
